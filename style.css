@@ -22,8 +22,8 @@ body {
 }
 
 a {
-    text-decoration: none;
-    color: var(--white);
+  text-decoration: none;
+  color: var(--white);
 }
 
 h1,
@@ -31,7 +31,6 @@ h2,
 h3 {
   font-family: "Josefin Sans", sans-serif;
 }
-
 
 header {
   background-image: url("/images/desktop/image-hero.jpg");
@@ -41,40 +40,44 @@ header {
 }
 
 .main {
-    height: 600px;
+  height: 600px;
+}
+
+.mbl-btn {
+  display: none;
 }
 
 .main-box {
-    display: flex;
-    flex-direction: column;
-    gap: 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo {
-    color: var(--white);
-    font-weight: 700;
-    font-size: 30px;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 30px;
 }
 
 .navbar-list {
-    display: flex;
-    gap: 2rem;
+  display: flex;
+  gap: 2rem;
 }
 
 .shout-box {
-    color: var(--white);
-    border: 1px solid var(--white);
-    padding: 1rem;
-    height: 300px;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+  color: var(--white);
+  border: 1px solid var(--white);
+  padding: 1rem;
+  height: 300px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .shout-box h1 {
@@ -82,12 +85,12 @@ header {
 }
 
 .hero-box {
-    display: flex;
+  display: flex;
 }
 
 .hero-img {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .hero-para {
@@ -183,11 +186,147 @@ header {
   background-color: var(--white);
 }
 
+.footer {
+  background-color: var(--black);
+}
 
+.logo-footer {
+  display: flex;
+  justify-content: space-between;
+}
 
+.logo-footer h1 {
+  color: var(--white);
+}
 
+.logo-footer .social {
+  display: flex;
+  gap: 1rem;
+}
 
+.copy-right {
+  color: var(--dark-gray);
+}
 
+.footer-exit {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
 
+.footer-nav {
+  display: flex;
+  gap: 1rem;
+}
 
+.social img {
+  cursor: pointer;
+}
 
+.social img {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.navbar img {
+  display: none;
+}
+
+@media (max-width: 990px) {
+  .shout-box h1 {
+    font-size: 45px;
+  }
+
+  .hero-para {
+    padding: 2rem;
+    background: var(--white);
+    z-index: 999;
+    position: absolute;
+    top: 22rem;
+    left: 16rem;
+    width: 68%;
+    height: 66%;
+  }
+}
+
+@media (max-width: 430px) {
+  .gallery-title button {
+    display: none;
+  }
+  .gallery-title h1 {
+    font-size: 35px;
+    margin: 0;
+  }
+  .navbar-list {
+    display: none;
+  }
+  .navbar img {
+    display: block;
+    width: 10%;
+    height: 10%;
+  }
+  .shout-box {
+    width: 100%;
+  }
+  .shout-box h1 {
+    font-size: 40px;
+  }
+  .hero-img img {
+    width: 100%;
+  }
+
+  .hero-para h1 {
+    font-size: 20px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .hero-para {
+    padding: 2rem;
+    background: var(--white);
+    z-index: 999;
+    position: absolute;
+    left: 0;
+    top: 10rem;
+    bottom: 0rem;
+    width: 100%;
+    height: 100%;
+  }
+
+  .gallery-box {
+    margin-top: 5rem;
+  }
+
+  .gallery-title h1 {
+    font-size: 30px;
+    margin-top: 2rem;
+  }
+
+  .img-title img {
+    width: 350px;
+    height: 200px;
+  }
+
+  .img-title {
+    height: 100%;
+  }
+
+  .mbl-btn {
+    display: block;
+    width: 10em;
+    padding: 10px 0 30px 0;
+    border: none;
+    height: 20px;
+    font-size: 18px;
+    background-color: black;
+    color: var(--white);
+    font-family: "Josefin Sans", sans-serif;
+    transition: 0.5s;
+    text-align: center;
+  }
+
+  .mbl-btn:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: var(--black);
+    background-color: var(--white);
+  }
+}
