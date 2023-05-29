@@ -32,6 +32,7 @@ h3 {
   font-family: "Josefin Sans", sans-serif;
 }
 
+
 header {
   background-image: url("/images/desktop/image-hero.jpg");
   background-size: cover;
@@ -72,7 +73,79 @@ header {
     height: 200px;
     width: 50%;
     display: flex;
-    align-items: center;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
 }
+
+.hero-box {
+    display: flex;
+}
+
+.hero-img {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero-para {
+  padding: 2rem;
+  background: var(--white);
+  z-index: 999;
+  position: absolute;
+  top: 50rem;
+  right: 100px;
+  width: 40%;
+  height: 40%;
+}
+
+.hero-para h1 {
+  font-size: 50px;
+  margin-bottom: 2rem;
+}
+
+.hero-para p {
+  color: var(--very-dark-gray);
+}
+
+.gallery {
+  margin-top: 8rem;
+}
+
+.gallery-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.gallery-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.gallery-img {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.gallery-title h1 {
+  font-size: 40px;
+}
+
+.gallery-title button {
+  width: 10em;
+  border: none;
+  font-size: 18px;
+  background-color: black;
+  color: var(--white);
+  font-family: "Josefin Sans", sans-serif;
+  transition: .5s;
+}
+.gallery-title button:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+
