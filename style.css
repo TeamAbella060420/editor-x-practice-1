@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --dark-gray: hsl(0, 0%, 55%);
+  --very-dark-gray: hsl(0, 0%, 41%);
+}
+
+body {
+  font-family: "Alata", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+header {
+  background-image: url("/images/desktop/image-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main {
+    height: 500px;
+}
+
+.main-box {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.navbar-list {
+    display: flex;
+    gap: 2rem;
+}
+
+.shout-box {
+    color: var(--white);
+    border: 1px solid var(--white);
+    padding: 1rem;
+    height: 200px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
