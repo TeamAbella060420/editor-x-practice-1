@@ -32,6 +32,10 @@ h3 {
   font-family: "Josefin Sans", sans-serif;
 }
 
+.mobile-menu {
+  display: none;
+}
+
 header {
   background-image: url("/images/desktop/image-hero.jpg");
   background-size: cover;
@@ -285,7 +289,55 @@ footer {
   }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 568px) {
+  .mobile-menu {
+    z-index: 999999;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: var(--black); /* Adjust the background color and opacity as desired */
+    color: var(--white); /* Set the text color */
+    z-index: 999; /* Adjust the z-index value if needed */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mobile-menu .top {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  
+  .mobile-menu h1 {
+    font-size: 40px!important;
+    margin: 0;
+  }
+  
+  .mobile-menu .menu-nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    padding: 2rem;
+    justify-content: center;
+    font-family: "Josefin Sans", sans-serif;
+
+  }
+
+  .mobile-menu .menu-nav a {
+    font-size: 40px!important;
+    }
+  
+  .mobile-menu .menu-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    margin-bottom: 1rem;
+  }
+  
+  .mobile-menu .menu-nav a:last-child {
+    margin-bottom: 0;
+  }
+  
   .gallery-title button {
     display: none;
   }
@@ -319,17 +371,17 @@ footer {
   .hero-para {
     padding: 2rem;
     background: var(--white);
-    z-index: 999;
+    z-index: 1;
     position: absolute;
     left: 0;
-    top: 10rem;
+    top: 18rem;
     bottom: 0rem;
     width: 100%;
     height: 100%;
   }
 
   .gallery-box {
-    margin-top: 5rem;
+    margin-top: 8rem;
   }
 
   .gallery-title h1 {
@@ -410,5 +462,19 @@ footer {
   .footer-exit-mbl .copy-right {
     text-align: center;
     margin-top: 1rem;
+  }
+
+  @media (max-width: 430px) {
+    .gallery-title h1 {
+      font-size: 30px;
+      margin-top: 4rem;
+    }
+  }
+
+  @media (max-width: 360px) {
+    .gallery-title h1 {
+      font-size: 30px;
+      margin-top: 6rem;
+    }
   }
 }
