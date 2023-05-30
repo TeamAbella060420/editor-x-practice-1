@@ -253,6 +253,38 @@ footer {
   }
 }
 
+@media (max-width: 768px) {
+  .shout-box h1 {
+    font-size: 35px;
+  }
+  .hero-img img{
+    width: 100%;
+  }
+  .hero-para {
+    padding: 2rem;
+    background: var(--white);
+    z-index: 999;
+    position: absolute;
+    top: 17rem;
+    left: 15rem;
+    width: 66%;
+    height: 67%;
+  }
+}
+
+@media (max-width: 668px) {
+  .hero-para {
+    padding: 2rem;
+    background: var(--white);
+    z-index: 999;
+    position: absolute;
+    top: 17rem;
+    left: 11rem;
+    width: 66%;
+    height: 67%;
+  }
+}
+
 @media (max-width: 430px) {
   .gallery-title button {
     display: none;
